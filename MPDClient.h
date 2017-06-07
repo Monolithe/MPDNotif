@@ -3,6 +3,7 @@
  *
  *  Created on: 6 juin 2017
  *      Author: maxime
+ *      MPDClient : class : Connect to the server
  */
 
 #ifndef MPDCLIENT_H_
