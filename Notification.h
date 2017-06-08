@@ -21,6 +21,7 @@ class Notification {
 public:
 	Notification(const char *songInfos);
 	virtual ~Notification();
+	void run();
 
 private:
 	NotifyNotification *notification;

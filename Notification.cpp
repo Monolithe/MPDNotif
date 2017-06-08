@@ -13,10 +13,6 @@ Notification::Notification(const char *songInfos) {
 	notify_init("MPDNotif");
 	this->notification = notify_notification_new("mpd", songInfos, NULL);
 	notify_notification_set_timeout(notification, 2000);
-	if(!notify_notification_show(notification, NULL)) {
-		throw notify::NotificationException("Error : null n	otification");
-	}
-
 }
 
 Notification::~Notification() {
@@ -25,4 +21,11 @@ Notification::~Notification() {
 		notify_uninit();
 	}
 }
+
+void Notification::run() {
+	if(!notify_notification_show(notification, NULL)) {
+		throw notify::NotificationException("Error : null n	otification");
+	}
+}
+
 } /* namespace notify */
