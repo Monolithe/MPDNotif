@@ -31,7 +31,12 @@ void GClient::startConnection() {
 
 void GClient::runMainLoop() {
 	if(connectionStarted) {
-		this->client->runMainLoop();
+		try {
+			this->client->runMainLoop();
+		}
+		catch(const MpdErrorException &ex) {
+			throw;
+		}
 	}
 	else {
 		throw MpdErrorException("Error : uninitialized connection");
