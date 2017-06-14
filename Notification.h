@@ -10,7 +10,7 @@
 
 #include <libnotify/notify.h>
 #include <libnotify/notification.h>
-#include </usr/include/glib-2.0/glib.h>
+#include <glib.h>
 #include <iostream>
 
 #include "NotificationException.hpp"

@@ -17,8 +17,10 @@
 #include <mpd/message.h>
 
 #include <string>
+#include <string.h>
 
 #include "MpdErrorException.hpp"
+#include "Notification.h"
 
 
 namespace mpd {
@@ -31,6 +33,11 @@ public:
 	void sendError();
 	struct mpd_status* getStatus();
 	struct mpd_song* getActualSong();
+	std::string musicServerState();
+	static std::string getTag(const struct mpd_song *song, enum mpd_tag_type type);
+	void runMainLoop();
+	void notifyInfos();
+	struct mpd_connection* getConnection();
 	std::string getIp();
 	unsigned int getPort();
 	unsigned int getTimeOut();

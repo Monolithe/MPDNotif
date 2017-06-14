@@ -20,12 +20,12 @@ public:
 	GClient(MPDClient *client);
 	virtual ~GClient();
 	void startConnection();
-	std::string musicServerState();
-	static std::string getTag(const struct mpd_song *song, enum mpd_tag_type type);
+	void runMainLoop();
 	MPDClient* getClient();
 
 private:
 	MPDClient *client;
+	bool connectionStarted;
 };
 
 } /* namespace mpd */
