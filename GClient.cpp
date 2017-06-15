@@ -2,7 +2,7 @@
  * GClient.cpp
  *
  *  Created on: 7 juin 2017
- *      Author: maxime
+ *      Author: Monolithe
  */
 
 #include "GClient.h"

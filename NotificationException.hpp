@@ -2,7 +2,7 @@
  * NotificationException.hpp
  *
  *  Created on: 8 juin 2017
- *      Author: maxime
+ *      Author: Monolithe
  */
 
 #ifndef NOTIFICATIONEXCEPTION_HPP_

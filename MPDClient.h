@@ -2,7 +2,7 @@
  * MPDClient.h
  *
  *  Created on: 6 juin 2017
- *      Author: maxime
+ *      Author: Monolithe
  *      MPDClient : class : Connect to the server
  */
 

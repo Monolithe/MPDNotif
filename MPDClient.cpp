@@ -2,7 +2,7 @@
  * MPDClient.cpp
  *
  *  Created on: 6 juin 2017
- *      Author: maxime
+ *      Author: Monolithe
  */
 
 #include "MPDClient.h"

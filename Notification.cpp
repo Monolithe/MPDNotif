@@ -2,7 +2,7 @@
  * Notification.cpp
  *
  *  Created on: 8 juin 2017
- *      Author: maxime
+ *      Author: Monolithe
  */
 
 #include "Notification.h"

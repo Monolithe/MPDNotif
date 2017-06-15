@@ -2,7 +2,7 @@
  * Notification.h
  *
  *  Created on: 8 juin 2017
- *      Author: maxime
+ *      Author: Monolithe
  */
 
 #ifndef NOTIFICATION_H_

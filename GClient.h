@@ -2,7 +2,7 @@
  * GClient.h
  *
  *  Created on: 7 juin 2017
- *      Author: maxime
+ *      Author: Monolithe
  */
 
 #ifndef GCLIENT_H_
