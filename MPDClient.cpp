@@ -128,7 +128,7 @@ void MPDClient::runMainLoop() {
 
 void MPDClient::notifyInfos() {
 	std::string musicServerState = this->musicServerState();
-	notify::Notification notif(musicServerState.c_str());
+	notify::Notification notif("mpd", musicServerState.c_str());
 	notif.run();
 }
 

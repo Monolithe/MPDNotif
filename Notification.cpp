@@ -9,9 +9,9 @@
 
 namespace notify {
 
-Notification::Notification(const char *songInfos) {
+Notification::Notification(const char *name, const char *songInfos) {
 	notify_init("MPDNotif");
-	this->notification = notify_notification_new("mpd", songInfos, NULL);
+	this->notification = notify_notification_new(name, songInfos, NULL);
 	notify_notification_set_timeout(notification, 2000);
 }
 
@@ -24,7 +24,7 @@ Notification::~Notification() {
 
 void Notification::run() {
 	if(!notify_notification_show(notification, NULL)) {
-		throw notify::NotificationException("Error : null n	otification");
+		throw notify::NotificationException("Error : null notification");
 	}
 }
 

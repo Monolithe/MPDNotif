@@ -19,7 +19,7 @@ namespace notify {
 
 class Notification {
 public:
-	Notification(const char *songInfos);
+	Notification(const char *name, const char *songInfos);
 	virtual ~Notification();
 	void run();
 
