@@ -30,7 +30,7 @@
 using namespace mpd;
 
 static void showHelp() {
-	std::cout << "MPDNotif is a notification client for mpd\nUsage MPDnotif [-c IP] [-p PORT] [-t TIMEOUT]\nOptions :\n-c <IP> : set mpd server host\n-p <PORT> : set mpd server port\n-t <TIMEOUT> : set connection timeout\n-h : show this help\n";
+	std::cout << "MPDNotif is a notification client for mpd\nUsage MPDnotif [-d] [-c IP] [-p PORT] [-t TIMEOUT]\nOptions :\n-d : set daemon mode\n-c <IP> : set mpd server host\n-p <PORT> : set mpd server port\n-t <TIMEOUT> : set connection timeout\n-h : show this help\n";
 }
 
 pid_t proc_find(const char* name, pid_t actPid) {
