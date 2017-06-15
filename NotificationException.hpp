@@ -5,6 +5,7 @@
  *      Author: Monolithe
  */
 
+
 #ifndef NOTIFICATIONEXCEPTION_HPP_
 #define NOTIFICATIONEXCEPTION_HPP_
 
