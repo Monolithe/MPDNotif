@@ -17,11 +17,11 @@
 #include <dirent.h>
 
 
-#include "MPDClient.h"
-#include "GClient.h"
-#include "MpdErrorException.hpp"
-#include "Notification.h"
-#include "NotificationException.hpp"
+#include "include/MPDClient.h"
+#include "include/GClient.h"
+#include "include/MpdErrorException.hpp"
+#include "include/Notification.h"
+#include "include/NotificationException.hpp"
 
 #define DEFAULT_PORT 6600
 #define DEFAULT_IP "127.0.0.1"
