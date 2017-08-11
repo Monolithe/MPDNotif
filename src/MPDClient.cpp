@@ -90,8 +90,16 @@ std::string MPDClient::getTag(const struct mpd_song *song, enum mpd_tag_type typ
 
 
 void MPDClient::runMainLoop() {
-	while(mpd_connection_get_error(this->connection) == MPD_ERROR_SUCCESS) {
-		if(mpd_connection_get_error(this->connection) != MPD_ERROR_SUCCESS) {
+	char c = 0x0;
+
+    while(mpd_connection_get_error(this->connection) == MPD_ERROR_SUCCESS || c == EOF) {
+		c = getc(stdin);
+        
+        if(c == EOF) {
+            break;
+        }
+
+        if(mpd_connection_get_error(this->connection) != MPD_ERROR_SUCCESS) {
 			std::string s(mpd_connection_get_error_message(this->connection));
 			throw MpdErrorException(s);
 		}
